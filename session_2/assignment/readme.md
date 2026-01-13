@@ -98,48 +98,7 @@ applyCoupon(500, "NONE")    // 500
 
 Concepts used: condition handling, business logic
 
----
-
-## Technologies Used
-
-* JavaScript (ES6)
-* Node.js / Browser Console
-
----
-
-## How to Run the Project
-
-1. Clone the repository
-
-```
-git clone <your-repo-url>
-```
-
-2. Open the project folder
-
-```
-cd your-repo-name
-```
-
-3. Run the file
-
-```
-node index.js
-```
-
-Or open it in the browser and check the console.
-
----
-
-## Learning Outcomes
-
-* Improved understanding of JavaScript fundamentals
-* Better grip on program flow and logic building
-* Practical usage of functions and conditions
-
----
-
-## Author
+## Intern
 
 **Divy Vaddoriya**
 Student – LD College of Engineering
