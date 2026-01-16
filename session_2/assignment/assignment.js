@@ -1,14 +1,19 @@
 //  assignment - 1
 
-
-const check_number =(n) => {
- return n!= 0 ? n%2 == 0 ? "even" : "odd" : "zero";
-} 
+let n =4;
+const check_number = (n) => {
+    if(n === 0) return "zero"
+    else if(n < 0) return "negative"
+    else return "positive"
+}
+console.log(check_number());
 
 // assignment -2 
 
-const print_even_odd_range = () => {
+const print_even_odd_range = () => 
+    {
     for(let i =1  ; i <= 20 ; i++) console.log( i , "->",  i%2 === 0 ? "even" : "odd"); 
+
 }
 
 // assignment - 3 
