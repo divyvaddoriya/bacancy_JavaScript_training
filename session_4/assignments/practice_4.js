@@ -6,7 +6,7 @@ function masterClone(data) {
 
     if(Array.isArray(data)) {
         return data.map((d) => masterClone(d));
-        
+    }
     let result = {}
 
     for(let i of Object.keys(data) ) {
@@ -17,6 +17,7 @@ function masterClone(data) {
 
 }
 
+
 let data = {name: "divy" , age: {name : "hi" , age: 20}}
 
 let copy = masterClone(data);
@@ -24,4 +25,4 @@ let copy = masterClone(data);
 copy.age.name = "ayush"
 
 console.log(data);
-console.log(copy);
+console.log(copy)
