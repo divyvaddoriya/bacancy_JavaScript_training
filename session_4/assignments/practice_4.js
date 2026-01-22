@@ -1,6 +1,7 @@
 function masterClone(data) {
+  
     
-    if((typeof data  !== "object") || (typeof data == null)){
+    if((typeof data  !== "object") || (typeof data === null)){
         return data;    
     }
 
