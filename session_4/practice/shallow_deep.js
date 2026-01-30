@@ -64,5 +64,8 @@ let person = { name: "Divy" };
 
 // Direct circular reference
 person.self = person;
-console.log(person);
+// console.log(person);
+
+let arr = ['' , null , [], {} , 1 , 0].filter(Boolean)
+console.log(arr);
 

@@ -9,6 +9,7 @@ User.prototype.sayHi = function() {
 
 const user1 = new User("Divy");
 const user2 = new User("Ayush");
+
 user1.sayHi = function (){
     return "hello"
 }
@@ -164,3 +165,34 @@ console.log(player2.points); // 10
 
 // The Logic: When you ran player1.points = ..., JavaScript did a "get" (finding 10 on the prototype) and then a "set
 // A "set" operation on an instance always creates the property on that instance. This is the definition of Shadowing
+
+
+
+// theory in javascript 
+
+let arr = ["divy" , "vaddoriya"]
+let object = {
+    name: "divy",
+    city : "ahmedabad",
+    getInfo : function (){
+        console.log(this.name + " from " + this.city);
+    }
+}
+
+
+function Animal(name) {
+    this.name = name
+}
+function Dog (name) {
+    this.name = name 
+}
+
+
+Dog.prototype = Animal.prototype
+
+
+Dog.prototype.greet = () => {
+    console.log("hello dog");
+}
+let a =new Animal("divy")
+a.greet()

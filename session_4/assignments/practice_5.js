@@ -1,6 +1,6 @@
 class Counter {
-  static count = 0;
-  
+
+  static count = 0; 
   count = 10;
 
   constructor() {
@@ -14,7 +14,6 @@ class Counter {
   static getStaticCount() {
     return this.count;
   }
-
 }
 
 const c1 = new Counter();

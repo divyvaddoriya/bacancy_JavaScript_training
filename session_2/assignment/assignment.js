@@ -1,6 +1,6 @@
 //  assignment - 1
 
-let n =4;
+let n = 4 ;
 const check_number = (n) => {
     if(n === 0) return "zero"
     else if(n < 0) return "negative"
@@ -19,13 +19,24 @@ const print_even_odd_range = () =>
 // assignment - 3 
 
 const check_role = (role) => {
-    switch(role) {
-        case "ADMIN" : console.log("FULL ACCESS"); break;
-        case "USER" : console.log("LIMITED ACCESS"); break;
-        case "MANAGER" : console.log("MODERATE ACEESS"); break;
-        default : console.log("INVALID ROLE"); break;
+    // switch(role) {
+    //     case "ADMIN" : console.log("FULL ACCESS"); break;
+    //     case "USER" : console.log("LIMITED ACCESS"); break;
+    //     case "MANAGER" : console.log("MODERATE ACEESS"); break;
+    //     default : console.log("INVALID ROLE"); break;
+    // }
+
+    let roles = {
+        "ADMIN" : "FULL ACCESSS",
+        "USER" : "LIMITED ACCESSS",
+        "MANAGER" : "MODERATE ACCESSS",
+        "DEFAULT" : "INVALID ROLE"
     }
+
+    return roles[role];
 }
+
+console.log(check_role("ADMIN"));
 
 // assignment - 4 
 
