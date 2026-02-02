@@ -221,3 +221,25 @@ let d = projects
 // }  , {})
 
 // console.log(d);
+
+
+const logs = [
+  { user: "A", action: "login",  time: 1 },
+  { user: "A", action: "click",  time: 3 },
+  { user: "A", action: "click",  time: 4 },
+  { user: "B", action: "login",  time: 2 },
+  { user: "A", action: "logout", time: 8 },
+  { user: "B", action: "click",  time: 5 },
+  { user: "B", action: "logout", time: 7 },
+  { user: "C", action: "login",  time: 4 },
+  { user: "C", action: "logout", time: 23 }
+];
+
+logs.reduce((acc , val) => {
+    if(!acc[val.user]) acc[val.user] = {
+        "user" : val.user,
+          
+    }
+
+
+}, {})
