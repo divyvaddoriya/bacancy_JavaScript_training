@@ -1,3 +1,8 @@
+// Create three functions step1, step2, and step3, each accepting a callback and completing after 1 second using setTimeout.
+// Call them in sequence using nested callbacks.
+// Log "All steps finished" only after step3 completes.
+
+
 function step1(fn) {
     setTimeout(() => {
         console.log('Step 1 completed');
