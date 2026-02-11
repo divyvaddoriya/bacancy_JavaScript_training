@@ -291,4 +291,4 @@ const m = new Manager("Sarah");
 
 const p = m.print;
 
-p(); //
+p(); // sarah
