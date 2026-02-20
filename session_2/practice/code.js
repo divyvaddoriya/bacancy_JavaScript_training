@@ -107,19 +107,19 @@ greetOnce("JS");     // should NOT print anything
 // //     }
 // // }
 
-// function add(...args) {
-//     if(args.length >= 3) {
-//         return args.slice(0,3).reduce((acc , val)=>{
-//             acc+=val
-//             return acc;
-//         } , 0)
-//     }
+function add(...args) {
+    if(args.length >= 3) {
+        return args.slice(0,3).reduce((acc , val)=>{
+            acc+=val
+            return acc;
+        } , 0)
+    }
 
-//     return function ( ...next) {
-//         return add(...args , ...next)
-//     }
+    return function ( ...next) {
+        return add(...args , ...next)
+    }
 
-// }
+}
 
 // console.log(add(2)(3)(5));
 // console.log(add(2,3)(5));
